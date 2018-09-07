@@ -37,7 +37,7 @@
 #include <stdlib.h>
 #include "esp_flash_data_types.h"
 #include "esp_spi_flash.h"
-
+#define ESP_PARTITION_TABLE_ADDR 0x8000
 static inline bool possible_idx (uint8_t idx)
 {
   return ((idx +1) * sizeof (esp_partition_info_t)) < SPI_FLASH_SEC_SIZE;

@@ -13,7 +13,7 @@
 
 #include "esp_image_format.h"
 #include "esp_flash_data_types.h"
-
+#define ESP_PARTITION_TABLE_ADDR 0x8000
 #define FLASH_HDR_ADDR 0x1000
 
 static inline esp_image_header_t flash_load_rom_header (void)
